@@ -1,0 +1,45 @@
+# REX AI - Advanced Full-Stack Assistant Requirements
+# All packages are offline-capable after initial install
+
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+websockets==12.0
+python-multipart==0.0.6
+
+# NLP & Language Processing (Offline)
+spacy==3.7.2
+sentence-transformers==2.2.2
+nltk==3.8.1
+textblob==0.17.1
+rapidfuzz==3.2.0  # Fast fuzzy matching
+
+# Speech Processing (Offline)
+speechrecognition==3.10.0
+pydub==0.25.1
+gtts==2.3.2  # Google TTS (cached for offline)
+playsound==1.3.0
+
+# Vector Database & Memory
+chromadb==0.4.18
+numpy==1.24.3
+scikit-learn==1.3.2
+
+# Knowledge Graph
+networkx==3.1
+rdflib==7.0.0
+
+# Security & Sandbox
+ RestrictedPython==6.0
+docker==6.1.3
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+requests==2.31.0
+Pillow==10.1.0
+opencv-python-headless==4.8.1.78
+
+# Note: Download spacy models separately:
+# python -m spacy download en_core_web_sm
+# python -m spacy download xx_ent_wiki_sm
